@@ -1,0 +1,11 @@
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/data', methods=['GET', 'POST'])
+def api_data():
+    if request.method == 'GET':
+        # ... (retrieve data)
+    elif request.method == 'POST':
+        # ... (create data)
+    # ... (other CRUD operations)
